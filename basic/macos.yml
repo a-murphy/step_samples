@@ -2,14 +2,14 @@ resources:
   - name: myImage_basic
     type: Image
     configuration:
-      registry: johns_docker
+      registry: aidan_docker
       imageName: trriplejay/simpleserver
       imageTag: latest
 
   - name: myOtherImage_basic_2
     type: Image
     configuration:
-      registry: johns_docker
+      registry: aidan_docker
       imageName: trriplejay/simpleserver
       imageTag: latest
       autoPull: false
@@ -17,8 +17,8 @@ resources:
   - name: myRepo_basic
     type: GitRepo
     configuration:
-      path: trriplejay/simpleserver
-      gitProvider: johns_github
+      path: a-murphy/sample_node
+      gitProvider: aidan_github
       branches:
         include: ^dev.*$
         exclude: ^dev-9$
